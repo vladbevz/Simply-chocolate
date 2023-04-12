@@ -1,0 +1,129 @@
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+.products-container {
+  padding-bottom: 92px;
+}
+.products-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--text-site-color);
+}
+.products-title span {
+  color: var(--main-site-color);
+  margin-left: 4px;
+}
+.our-products .swiper {
+  position: static;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+.our-products .swiper-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.our-products .swiper-slide {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 270px;
+  padding: 32px 20px;
+  background-color: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+.our-products .swiper-pagination {
+  position: relative;
+  margin-top: 20px;
+}
+.our-products .swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+}
+.our-products .swiper-pagination-bullet-active {
+  background-color: var(--main-site-color);
+  width: 28px;
+  border-radius: 20px;
+}
+.our-products
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin-left: 13px;
+}
+.products-image {
+  display: flex;
+  justify-content: center;
+}
+.products-content {
+  margin-top: 8px;
+  margin-bottom: 18px;
+}
+.products-subtitle {
+  text-align: center;
+  margin-bottom: 2px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--text-site-color);
+}
+.products-text {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: var(--text-site-color);
+}
+
+.products-price-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fafafa;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+  .products-container {
+    padding-bottom: 100px;
+  }
+  .products-title {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .our-products .swiper-pagination {
+    margin-top: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-products .container {
+    width: 1200px;
+  }
+  .our-products .products-container {
+    padding-bottom: 128px;
+  }
+}

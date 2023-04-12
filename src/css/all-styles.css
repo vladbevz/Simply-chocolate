@@ -1,0 +1,74 @@
+
+@import url('./advantages-section.css');
+@import url('./footer-section.css');
+@import url('./header-section.css');
+@import url('./hero-section.css');
+@import url('./how-its-made-section.css');
+@import url('./modal-buy-now.css');
+@import url('./modal-explore-chocolate.css');
+@import url('./modal-review.css');
+@import url('./our-products-section.css');
+@import url('./reviews-section.css');
+@import url('./top-sellers-section.css');
+@import url('./unique-components-section.css');
+@import url('./subscribe-section.css');
+html {
+    scroll-behavior: smooth;
+    }
+:root{
+    --main-site-color: #FD9222;
+    --text-site-color:#111111;
+    --back-ground-color:#1E1823;
+}
+body {background-color: #FAFAFA;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+  }
+button {
+	cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul,
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+@media screen and (min-width: 1200px) {
+    .container {
+   padding: 0px 32px;
+   margin: 0 auto;
+   max-width: 1200px;
+   }
+   }

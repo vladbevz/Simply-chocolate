@@ -1,0 +1,263 @@
+/* Гумова верстка до 375px */
+.header {
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-logo-link {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: #111111;
+}
+
+.header-logo-simply {
+  font-style: italic;
+}
+
+.header-logo-icon {
+  fill: #fd9222;
+  margin-left: 4px;
+  width: 21px;
+  height: 21px;
+}
+
+.header-btn-mobile {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.header-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 220px;
+  height: 100vh;
+  background-color: #1e1823;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 136px 46px 20px 20px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 11;
+}
+
+.header-navigation.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.header-btn-mobile-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  fill: #fff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-btn-mobile-close:hover {
+  fill: #fd9222;
+}
+
+.header-sections {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header-sections-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header-sections-link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: white;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-sections-link:hover {
+  color: #fd9222;
+}
+
+.header-social-list {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+
+.header-social-icon {
+  width: 22px;
+  height: 22px;
+  fill: #fff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-social-icon:hover {
+  fill: #fd9222;
+}
+
+/* Адаптивна верстка */
+/* Стилі ддя моб */
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 335px;
+  }
+}
+
+/* Стилі для таблета */
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .container {
+    max-width: 704px;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .header-logo {
+    margin-right: 503px;
+  }
+
+  .mobile-btn-open {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header-navigation {
+    width: 290px;
+    padding: 156px 81px 24px 32px;
+  }
+
+  .mobile-icon-close {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header-social-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Стилі для десктопа */
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+
+  .container {
+    max-width: 1136px;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: unset;
+  }
+
+  .header-logo {
+    margin-right: 188px;
+  }
+
+  .header-logo-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .header-logo-link {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  .header-navigation {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    width: unset;
+    height: unset;
+    position: static;
+    padding: unset;
+    box-shadow: unset;
+    opacity: 1;
+    visibility: unset;
+    pointer-events: unset;
+    display: flex;
+    flex-direction: row;
+    transform: unset;
+  }
+
+  .header-sections {
+    justify-content: center;
+    margin-right: 137px;
+  }
+
+  .header-sections-list {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header-sections-link {
+    color: #111111;
+  }
+
+  .header-social-icon {
+    fill: #111111;
+  }
+
+  .header-btn-mobile {
+    display: none;
+  }
+
+  .mobile-icon-close {
+    display: none;
+  }
+}

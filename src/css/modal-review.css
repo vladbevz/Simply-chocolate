@@ -1,0 +1,444 @@
+
+
+
+
+
+.backdrop-review {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms linear, visibility 250ms linear;
+  z-index: 11;
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+
+
+.svg-iconua {
+display: inline-block;
+  top: 45%;
+}
+
+
+
+.container {
+  width: 100%;
+    max-width: 375px;
+}
+.review-modal {
+  position: relative;
+  width: 311px;
+padding-left: 24px;  
+padding-right: 24px;
+padding-top: 32px;
+background: #fafafa;
+border-radius: 15px;
+margin-left: auto;
+margin-right: auto;
+top: 50%;
+transform: translate(-0%, -50%);
+min-height: 471px;
+}
+.input-form {
+  width: 100%;
+  height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 13px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-right: 22px;
+  padding-left: 24px;
+  color: #111111;
+}
+.input-form::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+}
+.input-form.phone {
+  width: 100%;
+  height: 45px;
+  padding-left: 115px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 13px;
+  color: #111111;
+}
+.input-form.phone::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+}
+.textarea-form {
+  width: 263px;
+  height: 91px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 13px;
+  resize: none;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-right: 22px;
+  padding-left: 24px;
+  color: #111111;
+}
+.textarea-form::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+}
+.text-modal {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.form-field {
+  margin-bottom: 14px;
+}
+.text-modal {
+  font-size: 20px;
+  line-height: 1.1;
+  text-align: start;
+  margin-top: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  color: #111111;
+  max-width: 255px;
+}
+.modal-review-h  {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.1;
+  text-align: start;
+  color: #FD9222;
+}
+.btn-close {
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #fafafa;
+  border: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.namber-review {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+     font-family: 'Montserrat';
+     font-weight: 500;
+     line-height: 1.2;
+     letter-spacing: -0.02em;
+     top: 50%;
+     color: #000000;
+     border-right: 2px solid rgba(17, 17, 17, 0.15);
+     padding-right: 32px;
+  position: absolute;
+  transform: translate( +90%, -40%);
+  padding-right: 8px;
+}
+.btn-clo {
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+    display: flex;
+    margin: auto;
+}
+.span-review {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  transform: translate( +75%, -150%);
+}
+.button-send-review {
+  padding: 12px 28px;
+  color: #ffffff;
+  background: #FD9222;
+border-radius: 100px;
+padding: 14px 40px;
+margin-top: 18px;
+border: transparent;
+}
+.button-send-review:hover ,
+.button-send-review:focus {
+  background-color: #FCF1E0;
+  color: #FD9222;
+}
+@media screen and (min-width: 375px) {
+  .container {
+    width: 100%;
+      max-width: 375px;
+  }
+  .review-modal {
+    width: 311px;
+    height: 471px;
+padding-left: 24px;  
+padding-right: 24px;
+padding-top: 24px;
+top: 50%;
+transform: translate(-0%, -50%);
+  }
+  .input-form {
+    width: 100%;
+    height: 45px;
+  }
+  .input-form.phone {
+    width: 100%;
+    height: 45px;
+    padding-left: 115px;
+  }
+  .textarea-form {
+    width: 263px;
+    height: 91px;
+  }
+  .text-modal {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .form-field {
+    margin-bottom: 14px;
+  }
+  .text-modal {
+    font-size: 20px;
+    line-height: 1.1;
+    text-align: start;
+    margin-top: 0;
+  }
+  .modal-review-h  {
+    font-size: 20px;
+    line-height: 1.1;
+    text-align: start;
+  }
+  .btn-close {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .namber-review {
+    position: absolute;
+    transform: translate( +90%, -40%);
+    padding-right: 8px;
+  }
+  .btn-clo {
+    width: 24px;
+    height: 24px;
+  }
+  .span-review {
+    transform: translate( +75%, -150%);
+  }
+  .button-send-review {
+    padding: 12px 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;       
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .namber-review {
+    padding-right: 32px;
+  }
+  .review-modal {
+    width: 517px;
+  height: 631px;
+padding-left: 40px;
+padding-right: 40px;
+transform: translate(-0%, -50%);
+  }
+  .input-form {
+    width: 437px;
+    height: 66px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-right: 22px;
+    padding-left: 24px;
+  }
+  .input-form.phone {
+    position: relative;
+    width: 437px;
+    height: 66px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-right: 22px;
+    padding-left: 160px;
+  }
+  .textarea-form {
+    padding: 22px 24px 93px;
+width: 437px;
+height: 137px;
+resize: none;
+  }
+  
+  .form-field {
+    margin-bottom: 20px;
+  }
+  .text-modal {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: start;
+    margin-bottom: 40px;
+    max-width: none;
+  }
+  .modal-review-h  {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .btn-clo {
+    width: 28px;
+    height: 28px;
+  }
+  .span-review {
+    transform: translate( +75%, -190%);
+  }
+  .namber-review {
+    transform: translate( +90%, -50%);
+  }
+
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .btn-clo {
+    width: 28px;
+    height: 28px;
+  }
+  .span-review {
+    transform: translate( +75%, -190%);
+  }
+  .namber-review {
+    transform: translate( +90%, -50%);
+  }
+  .review-modal {
+    position: absolute;
+    position: relative;
+    width: 517px;
+    height: 631px;
+    background: #fafafa;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    transform: translate(-0%, -50%);
+  }
+  .input-form{
+    width: 437px;
+    height: 66px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-right: 22px;
+    padding-left: 24px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    border-radius: 13px;
+  color: rgba(64, 64, 64, 1);
+  }
+
+.input-form.phone {
+  position: relative;
+  width: 437px;
+  height: 66px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-right: 22px;
+  padding-left: 160px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 13px;
+  color: rgba(64, 64, 64, 1);
+}
+.textarea-form {
+  padding: 22px 24px 93px;
+width: 437px;
+height: 137px;
+resize: none;
+border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 13px;
+  resize: none;
+  margin-right: auto;
+  margin-left: auto;
+  color: rgba(64, 64, 64, 1);
+}
+.text-modal {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #111111;
+  margin-bottom: 40px;
+  max-width: none;
+  text-align: start;
+}
+.form-field {
+  margin-bottom: 20px;
+}
+.modal-review-h {
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+color: #FD9222;
+}
+.btn-close {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 24px;
+  margin-right: 24px;
+  background-color: #fafafa;
+  border: 0;
+}
+.namber-review {
+  position: absolute;
+  transform: translate( +90%, -50%);
+ display: flex;
+ justify-content: center;
+ text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    top: 50%;
+    color: #000000;
+    border-right: 2px solid rgba(17, 17, 17, 0.15);
+    padding-right: 32px;
+}
+.btn-clo {
+  width: 28px;
+  height: 28px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
+.span-review {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  transform:translate( +75%, -190%);
+
+}
+.button-send-review {
+  width: 117px;
+  height: 45px;
+  color: #ffffff;
+  background: #FD9222;
+border-radius: 100px;
+padding: 14px 40px;
+margin-top: 18px;
+border: transparent;
+}
+}

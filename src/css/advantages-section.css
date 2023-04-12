@@ -1,0 +1,129 @@
+.advantages {
+  background-color: #1e1823;
+}
+.advantages-list {
+  max-width: 1100px;
+  display: flex;
+  padding: 50px 10px;
+  gap: 80px;
+  margin: auto;
+}
+.advantages-item.active {
+  position: relative;
+}
+
+.advantages-item.active::after {
+  content: '';
+  width: 124px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: rotate(90deg);
+  position: absolute;
+  top: 50%;
+  right: 98%;
+}
+.advantages-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+.advantages-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+  width: 308px;
+}
+.advantages-icon {
+  fill: orange;
+}
+.advantages-span {
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 374px) {
+  .advantages {
+    max-width: 374px;
+  }
+  .advantages-item.active::after {
+    display: none;
+  }
+  .advantages-list {
+    max-width: 335px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 38px;
+  }
+  .advantages-text {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 375px) {
+  .advantages {
+    min-width: 375px;
+  }
+  .advantages-item.active::after {
+    display: none;
+  }
+  .advantages-list {
+    max-width: 335px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 38px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages {
+    min-width: 768px;
+  }
+  .advantages-list {
+    max-width: 704px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    row-gap: 32px;
+    flex-direction: row;
+    padding-top: 50px;
+  }
+  .advantages-item.active::after {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0px 32px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  .advantages {
+    min-width: 1200px;
+  }
+  .advantages-list {
+    max-width: 1100px;
+    display: flex;
+    padding: 50px 10px;
+    gap: 80px;
+    margin: auto;
+    flex-wrap: nowrap;
+  }
+  .advantages-item.active::after {
+    content: '';
+    display: block;
+    width: 124px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    right: 98%;
+  }
+}
